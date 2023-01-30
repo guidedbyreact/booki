@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Agence de voyage</title>
+    <style>
+      /* Définition de la disposition en flex pour le header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+      /* Alignement horizontal du menu */
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+ /* Alignement des éléments dans le main */
+ main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      /* Taille uniforme des sections */
+      main > section {
+        width: 30%;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Agence de voyage</h1>
+      <nav>
+        <ul>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section id="destinations">
+            <h2>Destinations populaires</h2>
+            <ul>
+              <li>Europe</li>
+              <li>Asie</li>
+              <li>Amérique du Nord</li>
+              <li>Amérique du Sud</li>
+            </ul>
+          </section>
+          <section id="services">
+            <h2>Nos services</h2>
+            <ul>
+              <li>Voyages organisés</li>
+              <li>Location de voitures</li>
+              <li>Réservation d'hôtels</li>
+              <li>Billets d'avion</li>
+            </ul>
+          </section>
+    </main>
+   </body>
+</html>

@@ -8,6 +8,13 @@ header {
     align-items: center;
     background-color: #F2F2F2;
     padding: 20px;
+    font-family: 'Raleway';
+	  size: 20px;
+  }
+
+  body {
+    font-family: 'Raleway';
+	  size: 20px;
   }
   
   img :hover{
@@ -94,24 +101,130 @@ header {
   }
 
   .search-filters {
-    margin-top: 20px; /* Ajout de la marge en haut */
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
     background-color :bisque;
   }
 
+  .fa-map-marker-alt {
+    background-color: #F2F2F2;
+    color: #000000    ;
+    border: none;
+    padding: 13px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 0px;
+  }
+
   .filters {
-    margin-top: 20px; /* Ajout de la marge en haut */
+    margin-top: 20px; 
     margin-bottom: 20px;
     padding: 20px;
     background-color :aqua;
   }
 
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50%;
+  }
+  
+  .search-field-container {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px;
+  }
+  
+  .search-field-container input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  
+  .search-button {
+    background-color: #0065FC;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .filters label {
+    margin-right: 10px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+  }
+  
+  .filter-buttons button {
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    color: #0065FC;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button:hover {
+    color: #007bff;
+  }
+
+  .fa-layers {
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding : 10px 10px 10px 10px;
+  }
+
+  .arrondis :hover {
+    background-color: #DEEBFF;
+    color: white;
+  }
+
+  .fa-layers-text {
+    color:#000000;
+    font-size: large;
+    border:1px;
+  }
+  
+  .search-field-container {
+    flex: 1;
+  }  
+  
+   /************************** REsulats Principaux ****************************/
   .search-results {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     background-color: darkkhaki;
+    border-radius: 10px;
+  }
+
+  .search-results h2{
+    margin-left: 30px;
+    font-weight: regular;
+    font-size: small;
   }
   
   .results-wrapper {
@@ -125,27 +238,67 @@ header {
   
   .main-results {
    background-color: darksalmon;
+   border-radius: 20px;
+   margin-left: 20px;
+  }
+
+  .main-results-gap {
+    background-color: darksalmon;
+    border-radius: 20px;
+    margin-left: 20px;
+   }
+
+  .image-parent {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+  }
+  
+  .image-container {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .description {
+    font-weight: bold;
+    margin-top: 10px;
+    /*white-space: nowrap;*/
+  }
+  
+  .text {
+    margin-top: 5px;
+  }
+  
+  .rating {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .checked {
+    color: orange;
   }
 
  .popular-results {
     background-color:darkcyan;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .image-parent-populaire {
+    display: flex;
+    flex-direction: column;
   }
 
   .main-results, .popular-results {
     width: 45%;
-  }
-  
-  .main-results ul, .popular-results ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-
-.main-results li, .popular-results li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
   }
   
   .main-results img, .popular-results img {
@@ -153,9 +306,79 @@ header {
     margin-right: 10px;
   }
 
+  .popular-results-gap {
+    background-color:darkcyan;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .main-results-gap{
+    width: 70%;
+  }
+
+  .popular-results-gap {
+    width:30%;
+  }
+
+  .main-results-gap img {
+    width: 100px;
+    column-gap:40px;
+  }
+
+  .popular-results-gap img{
+    width: 100px;
+    column-gap:40px;
+  }
+  
+  .main-results img, .popular-results img {
+    width: 100px;
+    margin-right: 10px;
+  }
+
+
+  /************************** DEBUT ACTIVITES ****************************/
+  .activites {
+    margin-top: 50px;
+  }
+  
+  .activites h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .images-activites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image-activite {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .image-activite img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /************************** FIN ACTIVITES ****************************/
+  
+  /************************** DEBUT FOOTER ****************************/
   footer {
     margin-top: 20px;
-    background-color: #333;
+    background-color: #F2F2F2;
     color: #fff;
     display: flex;
     flex-direction: row;
@@ -168,4 +391,72 @@ header {
     flex-direction: column;
     margin-right: 20px;
   }
+
+  .footer-column h3{
+    color:#000000;
+    font-size: 18px;
+    font-style: B;
+  }
+
+  /*.footer-column ul li {
+    color: #000000;
+    font-family: 'Raleway';
+    font-style: 'Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+  }*/
+
+  .footer-column a{
+    color: #000000;
+    font-style: Regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .footer-column link{
+    list-style-type: none;
+    font-style: Regular;
+  }
+
   
+  /************************** FIN FOOTER ****************************/
+
+
+  /* Media queries pour tablette et téléphone */
+
+/* Styles pour tablette */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  main {
+    margin: 10px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+}
+
+/* Styles pour téléphone */
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

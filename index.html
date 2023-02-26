@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-vKFpEh+z6RvR4eLj6Lb4Kj0I5B+MUWrBZvoY9r9QnWigLZ+2qGJFe7X2TJM6qdCY" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -18,7 +19,7 @@
         <img src="assets/img/logo/Booki.png" alt="Logo de Booki">
         <nav>
           <ul>
-            <li><a href="#">Hevergement</a></li>
+            <li><a href="#">Hebergements</a></li>
             <li><a href="#">Activités</a></li>
           </ul>
         </nav>
@@ -30,100 +31,219 @@
         </ul>
       </nav>
       <div class="search-filters">
-        <form>
-          <label for="search">Recherche :</label>
-          <input type="text" id="search" name="search">
-          <button type="submit">Rechercher</button>
-        </form>
-        <div class="filters">
-          <form>
-            <label for="filter1">Filtre 1 :</label>
-            <select id="filter1" name="filter1">
-              <option value="">-- Sélectionner --</option>
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </select>
-            <label for="filter2">Filtre 2 :</label>
-            <select id="filter2" name="filter2">
-              <option value="">-- Sélectionner --</option>
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </select>
-            <button type="submit">Filtrer</button>
-          </form>
+        <div class="search-container">
+          <div class="icon-container">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="search-field-container">
+            <input type="text" placeholder="Marseille, France">
+          </div>
+          <button type="button" class="search-button">Rechercher</button>
         </div>
+        <div class="filters">
+          <label for="filter-options">Filtres:</label>
+          <div class="filter-buttons">
+            <button class="arrondis">
+              <span class="fa-layers fa-fw">
+                <i class="fas fa-star"></i>
+                <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">économique</span>
+              </span>
+            </button>
+            <button class="arrondis">
+              <span class="fa-layers fa-fw">
+                <i class="fas fa-star"></i>
+                <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">économique</span>
+              </span>
+            </button>
+            <button class="arrondis">
+              <span class="fa-layers fa-fw">
+                <i class="fas fa-star"></i>
+                <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">économique</span>
+              </span>
+            </button>
+            <button class="arrondis">
+              <span class="fa-layers fa-fw">
+                <i class="fas fa-star"></i>
+                <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">économique</span>
+              </span>
+            </button>
+          </div>
+        </div>        
       </div>
       <div class="search-results">
-        <h2>Résultats de recherche</h2>
+        <h2>plus de 500 logements sont disponibles dans cette ville</h2>
         <div class="results-wrapper">
           <div class="main-results">
             <h3>Résultats principaux</h3>
-            <ul>
-              <li>
-                <img src="chemin/vers/image1.jpg" alt="Image 1">
-                <h4>Résultat 1</h4>
-                <p>Description du résultat 1.</p>
-              </li>
-              <li>
-                <img src="chemin/vers/image2.jpg" alt="Image 2">
-                <h4>Résultat 2</h4>
-                <p>Description du résultat 2.</p>
-              </li>
-              <li>
-                <img src="chemin/vers/image3.jpg" alt="Image 3">
-                <h4>Résultat 3</h4>
-                <p>Description du résultat 3.</p>
-              </li>
-            </ul>
+            <div class="image-parent">
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image1">
+                <div class="description">Auberge la Cannebiere</div>
+                <div class="text">Nuit a partir de 25e</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="image2">
+                <div class="description">Description de l'image 2</div>
+                <div class="text">Texte de l'image 2</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image3">
+                <div class="description">Description de l'image 3</div>
+                <div class="text">Texte de l'image 3</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="image-parent">
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image1">
+                <div class="description">Auberge la Cannebiere</div>
+                <div class="text">Nuit a partir de 25e</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="image2">
+                <div class="description">Description de l'image 2</div>
+                <div class="text">Texte de l'image 2</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image3">
+                <div class="description">Description de l'image 3</div>
+                <div class="text">Texte de l'image 3</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
           </div>
+          
           <div class="popular-results">
-            <h3>Résultats les plus populaires</h3>
-            <ul>
-              <li>
-                <img src="chemin/vers/image4.jpg" alt="Image 4">
-                <h4>Résultat 4</h4>
-                <p>Description du résultat 4.</p>
-              </li>
-              <li>
-                <img src="chemin/vers/image5.jpg" alt="Image 5">
-                <h4>Résultat 5</h4>
-                <p>Description du résultat 5.</p>
-              </li>
-              <li>
-                <img src="chemin/vers/image6.jpg" alt="Image 6">
-                <h4>Résultat 6</h4>
-                <p>Description du résultat 6.</p>
-              </li>
-            </ul>
+            <h3>les plus populaires</h3>
+            <div class="image-parent-populaire">
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image1">
+                <div class="description">Auberge la Cannebiere</div>
+                <div class="text">Nuit a partir de 25e</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="image2">
+                <div class="description">Description de l'image 2</div>
+                <div class="text">Texte de l'image 2</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            
+              <div class="image-container">
+                <img src="assets/img/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image3">
+                <div class="description">Description de l'image 3</div>
+                <div class="text">Texte de l'image 3</div>
+                <div class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
+      <div class="activites">
+        <h3>Activités a Marseille</h3>
+        <div class="images-activites">
+          <div class="image-activite">
+            <img src="assets/img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+            <div class="description">Description 1</div>
+          </div>
+          <div class="image-activite">
+            <img src="assets/img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+            <div class="description">Description 2</div>
+          </div>
+          <div class="image-activite">
+            <img src="assets/img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+            <div class="description">Description 3</div>
+          </div>
+          <div class="image-activite">
+            <img src="assets/img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+            <div class="description">Description 4</div>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="footer-column">
-          <h3>Menu 1</h3>
+          <h3>A propos</h3>
           <ul>
-            <li><a href="#">Sous-menu 1.1</a></li>
-            <li><a href="#">Sous-menu 1.2</a></li>
-            <li><a href="#">Sous-menu 1.3</a></li>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales </a></li>
+            <li><a href="#">Données et confidentialité</a></li>
           </ul>
         </div>
         <div class="footer-column">
-          <h3>Menu 2</h3>
+          <h3>Nos hebergements</h3>
           <ul>
-            <li><a href="#">Sous-menu 2.1</a></li>
-            <li><a href="#">Sous-menu 2.2</a></li>
-            <li><a href="#">Sous-menu 2.3</a></li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>
           </ul>
         </div>
         <div class="footer-column">
-          <h3>Menu 3</h3>
+          <h3>Assistance</h3>
           <ul>
-            <li><a href="#">Sous-menu 3.1</a></li>
-            <li><a href="#">Sous-menu 3.2</a></li>
-            <li><a href="#">Sous-menu 3.3</a></li>
+            <li><a href="#">Centre d’aide</a></li>
+            <li><a href="#">SNous contacter</a></li>
           </ul>
         </div>
       </footer>

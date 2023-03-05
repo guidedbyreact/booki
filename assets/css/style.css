@@ -6,15 +6,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F2F2F2;
     padding: 20px;
     font-family: 'Raleway';
 	  size: 20px;
+    margin-left: 10px;
   }
 
   body {
     font-family: 'Raleway';
 	  size: 20px;
+    background-color: #FFFFFF;
   }
   
   img :hover{
@@ -45,11 +46,10 @@ header {
   }
   
   nav a:hover {
-    text-decoration: underline;
+    color:#0065FC;
   }
 
   .second-nav {
-    background-color: #333;
     display: flex;
   }
   
@@ -73,10 +73,10 @@ header {
   }  
 
   .vertical-nav {
-    background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: left;
+    margin-left: 20px;
   }
   
   .vertical-nav ul {
@@ -91,20 +91,19 @@ header {
     margin: 10px;
   }
   
-  .vertical-nav a {
-    color: white;
-    text-decoration: none;
+  .item-bold{
+    font-weight: bold;
+    font-size:22px;
   }
 
-  .vertical-nav a:hover {
-    text-decoration: underline;
+  .item-normal{
+    font-weight:400;
+    font-size:16px;
   }
 
   .search-filters {
-    margin-top: 20px;
-    margin-bottom: 20px;
     padding: 20px;
-    background-color :bisque;
+    padding-bottom: 0px;;
   }
 
   .fa-map-marker-alt {
@@ -119,11 +118,11 @@ header {
     margin-right: 0px;
   }
 
+
   .filters {
     margin-top: 20px; 
     margin-bottom: 20px;
     padding: 20px;
-    background-color :aqua;
   }
 
   .search-container {
@@ -131,6 +130,7 @@ header {
     align-items: center;
     justify-content: center;
     margin-right: 50%;
+    margin-left: 10px;
   }
   
   .search-field-container {
@@ -217,12 +217,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: left;
-    background-color: darkkhaki;
     border-radius: 10px;
   }
 
   .search-results h2{
-    margin-left: 30px;
+    margin-left: 45px;
     font-weight: regular;
     font-size: small;
   }
@@ -233,51 +232,95 @@ header {
     justify-content: space-between;
     width: 100%;
     margin-top: 20px;
-    background-color: aqua;
   }
   
   .main-results {
-   background-color: darksalmon;
    border-radius: 20px;
    margin-left: 20px;
   }
 
   .main-results-gap {
-    background-color: darksalmon;
+    background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 20px;
+    margin-right: 20px;
+   }
+
+   .main-results-gap h3 {
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 22px;
    }
 
   .image-parent {
     display: flex;
     flex-direction: row;
-    width:100%;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:15px;
+    padding:15px;
+
   }
   
   .image-container {
-    margin: 10px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #aca5a5;
     border-radius: 5px;
     padding: 10px;
     border-radius: 20px;
+    flex:1 1 25%;
+    
+  }
+
+  .image-container-pop {
+    text-align: center;
+    border: 1px solid #aca5a5;
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    flex:1 1 100%;
+    
   }
   
   .description {
-    font-weight: bold;
-    margin-top: 10px;
-    /*white-space: nowrap;*/
+    margin-top: 5px;
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
   }
   
   .text {
     margin-top: 5px;
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
   }
   
   .rating {
     margin-top: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 10px;
+  }
+
+  .description-pop {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 150px;
+  }
+
+  .text-pop{
+    margin-left:150px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .rating-pop{
+    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
   }
   
   .checked {
@@ -285,16 +328,25 @@ header {
   }
 
  .popular-results {
-    background-color:darkcyan;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     margin-right: 20px;
   }
 
+  .popular-results-gap h3 {
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 22px;
+   }
+
   .image-parent-populaire {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:15px;
+    padding:15px;
   }
 
   .main-results, .popular-results {
@@ -307,7 +359,7 @@ header {
   }
 
   .popular-results-gap {
-    background-color:darkcyan;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -318,18 +370,30 @@ header {
     width: 70%;
   }
 
+  .afficher-plus{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
   .popular-results-gap {
     width:30%;
   }
 
   .main-results-gap img {
-    width: 100px;
-    column-gap:40px;
+    width: 100%;
+    height:100px;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .popular-results-gap img{
-    width: 100px;
-    column-gap:40px;
+    float: left;
+    width: 40%;
+    height:100px;
+    object-fit:cover;
+    border-radius: 20px 0px 0px 20px;
   }
   
   .main-results img, .popular-results img {
@@ -352,26 +416,39 @@ header {
   
   .images-activites {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 15px;
   }
   
   .image-activite {
+    border: 1px solid #aca5a5;
     width: 20%;
     margin-bottom: 20px;
+    border-radius: 20px 20px 20px 20px;
   }
   
   .image-activite img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   
-  .description {
+  .description-activite {
     margin-top: 10px;
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom :20px;
+    margin: 10px 20px 10px 20px;
   }
+
+ 
+
+  
 
   /************************** FIN ACTIVITES ****************************/
   
@@ -384,6 +461,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .footer-column {
@@ -422,6 +501,12 @@ header {
     list-style-type: none;
     font-style: Regular;
   }
+
+  .footer-list {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
 
   
   /************************** FIN FOOTER ****************************/

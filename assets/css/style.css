@@ -16,7 +16,13 @@ header {
     font-family: 'Raleway';
 	  size: 20px;
     background-color: #FFFFFF;
+		margin: 0;
   }
+  
+  .logo img{
+    width:40%;
+  }
+  
   
   img :hover{
     width: 100px;
@@ -49,6 +55,31 @@ header {
     color:#0065FC;
   }
 
+
+	.hebergement {
+		width: 50%;
+		text-align: center;
+		border-bottom: solid 2px silver;
+		padding-bottom: 10px;
+	}
+	.hebergement:hover {
+		border-bottom: solid 2px blue;
+	}
+
+	.activite {
+		width: 50%;
+		text-align: center;
+		border-bottom: solid 2px silver;
+		padding-bottom: 10px;
+	}
+	.activite:hover {
+		border-bottom: solid 2px blue;
+	}
+
+  .mobile-menu {
+    display: none;
+  }
+
   .second-nav {
     display: flex;
   }
@@ -79,6 +110,11 @@ header {
     margin-left: 20px;
   }
   
+  .vertical-nav p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
   .vertical-nav ul {
     display: flex;
     flex-direction: column;
@@ -118,34 +154,20 @@ header {
     margin-right: 0px;
   }
 
-
-  .filters {
-    margin-top: 20px; 
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-
   .search-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50%;
-    margin-left: 10px;
+    margin-right: 75%;
   }
   
   .search-field-container {
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 10px;
-  }
-  
-  .search-field-container input[type="text"] {
-    width: 100%;
     border: none;
     outline: none;
     font-size: 16px;
     padding-left: 10px;
+    width:100%;
   }
   
   .search-button {
@@ -160,22 +182,31 @@ header {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   }
+
+  .search-mobile-button{
+    display:none;
+  }
   
   .filters {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
     margin-top: 20px;
+    gap:20px;
+    padding-left: 10px;
+  }
+
+  .filters_title{
+    margin-left: 0px;
   }
   
   .filters label {
     margin-right: 10px;
   }
   
-  .filter-buttons {
-    display: flex;
-  }
-  
-  .filter-buttons button {
+  .filters button {
     margin-right: 10px;
     border: none;
     background-color: transparent;
@@ -183,7 +214,7 @@ header {
     cursor: pointer;
   }
   
-  .filter-buttons button:hover {
+  .filters button:hover {
     color: #007bff;
   }
 
@@ -220,10 +251,25 @@ header {
     border-radius: 10px;
   }
 
+  .informations{
+    display:flex;
+    margin-left: 30px;
+  }
+
+  .informations h2{
+    margin-left:10px;
+  }
+
+  .info-circle{
+    margin-top: 10px;
+  }
+
   .search-results h2{
-    margin-left: 45px;
     font-weight: regular;
     font-size: small;
+  }
+
+  .search-results img {
   }
   
   .results-wrapper {
@@ -303,24 +349,25 @@ header {
     margin-left: 10px;
   }
 
+  .desc-general-pop{
+    padding-left: 10px;
+  }
+
   .description-pop {
-    margin-top: 10px;
+
     font-size: 16px;
     text-align: left;
-    margin-left: 150px;
   }
 
   .text-pop{
-    margin-left:150px;
     font-size: 14px;
     text-align: left;
   }
 
   .rating-pop{
-    margin-top: 40px;
+    margin-top: 68px;
     display: flex;
     justify-content: left;
-    margin-left: 150px;
   }
   
   .checked {
@@ -378,6 +425,7 @@ header {
 
   .popular-results-gap {
     width:30%;
+    margin-right: 20px;
   }
 
   .main-results-gap img {
@@ -391,7 +439,7 @@ header {
   .popular-results-gap img{
     float: left;
     width: 40%;
-    height:100px;
+    height:120px;
     object-fit:cover;
     border-radius: 20px 0px 0px 20px;
   }
@@ -405,13 +453,14 @@ header {
   /************************** DEBUT ACTIVITES ****************************/
   .activites {
     margin-top: 50px;
+    padding-left: -20px;
   }
   
   .activites h3{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
   
   .images-activites {
@@ -420,6 +469,8 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
   
   .image-activite {
@@ -431,7 +482,7 @@ header {
   
   .image-activite img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -444,11 +495,9 @@ header {
     margin-left: 20px;
     margin-bottom :20px;
     margin: 10px 20px 10px 20px;
+
   }
 
- 
-
-  
 
   /************************** FIN ACTIVITES ****************************/
   
@@ -475,17 +524,7 @@ header {
     color:#000000;
     font-size: 18px;
     font-style: B;
-  }
-
-  /*.footer-column ul li {
-    color: #000000;
-    font-family: 'Raleway';
-    font-style: 'Regular';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-decoration: none;
-  }*/
+  } 
 
   .footer-column a{
     color: #000000;
@@ -507,6 +546,25 @@ header {
     list-style-type: none;
   }
 
+  .title-small{
+    display: none;
+  }
+
+  .populaire-title{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .populaires-stats{
+    margin-right: 20px;
+    margin-top:25px;
+    color: #0065FC;
+  }
+
+ .populaire-title .a-chart-line-up{
+   margin-left:10px;
+ }
+
 
   
   /************************** FIN FOOTER ****************************/
@@ -515,9 +573,11 @@ header {
   /* Media queries pour tablette et téléphone */
 
 /* Styles pour tablette */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width:468px) {
   header {
-    padding: 10px;
+    padding-left: 0;
+		padding-right: 0;
+		margin: 0;
   }
   
   nav li {
@@ -532,16 +592,251 @@ header {
   section h2 {
     font-size: 18px;
   }
+
+  .main-results-gap{
+    width:90%;
+  }
+
+  .results-wrapper {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .popular-results-gap{
+    order:2;
+    width:90%;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .popular-results-gap img{
+    height:200px;
+    width:200px;
+  }
+
+  .image-parent-populaire{
+    
+
+  }
+
+  .image-activite img{
+    height:100px;
+  }
+
+  .activites{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  
 }
 
-/* Styles pour téléphone */
-@media only screen and (max-width: 480px) {
-  header {
-    padding: 10px;
+
+@media (max-width: 467px) {
+
+  .title-large{
+    display: none;
+  }
+
+  .title-small {
+    display: block;
+  }
+
+  .mobile-body {
+    margin-left: 0px;
+    margin-right: -20px;
+  }
+
+  .popular-results-gap {
+    background-color: #E0E0E0;
+		border-radius: none;
+  }
+
+  .main-results-gap{
+    background-color: #FFFFFF;
+  }
+
+  .image-container-pop{
+    background-color: #FFFFFF;
   }
   
+  .logo {
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .mobile-menu{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+  }
+
+  nav {
+   width:100%;
+  }
+
+
+  .nav-links {
+
+  }
+
   nav li {
-    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    }
+
+
+  .vertical-nav {
+    margin-left: 20px;
+    margin-right: 20px;
+		width: auto;
+ }
+
+  .vertical-nav li{
+    margin-left: 0px;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    margin-left: 0px;
+  }
+
+  .informations{
+    margin-left: 20px;
+  }
+  
+  .search-results{
+    margin-left: 0px;
+  }
+
+  .search-filters{
+    padding: 0px;
+		margin-left: 20px;
+		margin-right: 20px;
+  }
+  
+  .search-field-container {
+    margin-top: 0.5rem;
+  }
+  
+  .search-button {
+    margin-top: 0.5rem;
+    display:none;
+  }
+
+  .search-mobile-button{
+    display:flex;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .filters {
+    display:flex;
+    flex-direction: row;
+    padding:0px;
+    align-items: start;
+		flex-wrap: wrap;
+  }
+	
+	.filters_title {
+		width: 100%;
+    margin-bottom: -20px;
+	}
+
+  .filters button{
+    margin-right: 0px;
     margin-bottom: 10px;
+    margin-top:20px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .arrondis {
+  }
+
+  .filters label{
+    display: flex;
+    align-items: left;
+    align-content: flex-start;
+    margin-left: 0px;
+  }
+
+  .results-wrapper{
+    flex-direction: column;
+  }
+
+  .popular-results-gap{
+    order:1;
+    width: 100%;
+    padding-right: 20px;
+    border-radius: 0px;
+  }
+
+  .activites {
+    margin-top: 0px;
+  }
+
+  .main-results-gap{
+    order:2;
+    width:100%;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .image-container{
+    flex:1 1 100%;
+  }
+
+  .image-activite{
+    flex-direction: column;
+    width:100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .afficher-plus {
+    display:none;
+  }
+
+  .images-activites img{
+    height: 200px;
+  }
+
+  footer{
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: -20px;
   }
 }
+  
+  
+  
+  
+  
+  
+

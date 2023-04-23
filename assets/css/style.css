@@ -812,6 +812,7 @@ nav li {
 
 .activites {
   margin-top: 0px;
+  margin-right: 20px;
 }
 
 .main-results-gap{
@@ -838,6 +839,32 @@ nav li {
 
 .images-activites img{
   height: 200px;
+}
+
+.image-parent-populaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.populaires-stats {
+  margin-right: 40px;
+  margin-top: 25px;
+  color: #0065FC;
+}
+
+.image-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  margin-right: 20px;
 }
 
 footer{

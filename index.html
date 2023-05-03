@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon site avec media queries pour smartphone</title>
-    <link rel="stylesheet" href="style.css">
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+  integrity="sha384-vKFpEh+z6RvR4eLj6Lb4Kj0I5B+MUWrBZvoY9r9QnWigLZ+2qGJFe7X2TJM6qdCY" crossorigin="anonymous">-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
   </head>
   <body>
     <header>
@@ -19,6 +30,38 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+    <div class="filters">  
+      <div class="filters_title">Filtres</div>
+      <button class="arrondis filtre1 same-size">
+        <span class="fa-layers fa-fw economique">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">Économique</span>
+        </span>
+      </button>
+      <button class="arrondis filtre2 same-size">
+        <span class="fa-layers fa-fw familial">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">Familial</span>
+        </span>
+      </button>
+      <button class="arrondis filtre3 same-size">
+        <span class="fa-layers fa-fw romantique" >
+          <i class="fas fa-heart"></i>
+          <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">Romantique</span>
+        </span>
+      </button>
+      <button class="arrondis filtre4 same-size">
+        <span class="fa-layers fa-fw animaux">
+          <i class="fas fa-dog"></i>
+          <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3">Animaux autorisés</span>
+        </span>
+      </button>
+      <style>
+        .filtre1, .filtre2, .filtre3, .filtre4 {
+          display: inline-block;
+        }
+      </style>
+    </div>
     
     <main>
       <section class="onglets">
@@ -33,6 +76,6 @@
       </section>
     </main>
     
-    <script src="script.js"></script>
+   
   </body>
 </html>

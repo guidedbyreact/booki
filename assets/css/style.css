@@ -172,7 +172,9 @@ nav a:hover {
 
 ::placeholder
 {
-	color: black;
+	color: #000000;
+  size:18px;
+  font-family: raleway;
 }
 
 .search-field-container {

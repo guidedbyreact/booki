@@ -58,8 +58,13 @@ nav li:hover {
 }
 
 nav a {
-  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
   text-decoration: none;
+  size:16px;
+  font-family: 'Raleway';
+
 }
 
 nav a:hover {
@@ -739,6 +744,15 @@ section h2 {
 		display: inline-block;
 		width: 100%;
 		text-align: left;
+}
+
+.activites-title {
+  white-space: nowrap;
+}
+
+.mobile-line-break::before {
+  content: "\A";
+  white-space: pre;
 }
 
 .romantique{

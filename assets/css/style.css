@@ -28,6 +28,13 @@ nav {
 	padding-right: 40px;
 }
 
+.button-hover:hover .fa-solid {
+ color:#0d2a56;
+}
+
+.button-hover:hover .fa-layers-text {
+  
+}
 
 img :hover{
   width: 100px;
@@ -186,7 +193,10 @@ nav a:hover {
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
-  border: none;
+	border-top: solid 1px #F2F2F2;
+	border-bottom: solid 1px #F2F2F2;
+  border-left: none;
+  border-right: none;
   outline: none;
   font-size: 16px;
   padding-left: 10px;
@@ -231,37 +241,46 @@ nav a:hover {
 }
 
 .filters button {
-  margin-right: 10px;
   border: none;
   background-color: transparent;
   color: #0065FC;
   cursor: pointer;
   white-space: nowrap;
+	padding: 0;
 }
 
-.filters button:hover {
-  color: #007bff;
-}
+
 
 .fa-layers {
   background-color: #FFFFFF;
-  border: 1px solid #D9D9D9;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  padding : 10px 10px 10px 10px;
+  border: 2px solid #D9D9D9;
+  border-radius: 24px;
+  padding : 15px 19px 15px 19px;
 
 }
 
-.arrondis :hover {
+.filtres :hover {
   background-color: #DEEBFF;
   color: white;
 }
 
+.filtres .fa-layers-text :hover{
+  color: black;
+}
+
+.filtres .fa-dog :hover{
+  color: black;
+  color:inherit;
+}
+
+.filtres .fa-layers-text :hover {
+  background-color: #000000;
+  color:#000000;
+}
+
 .fa-layers-text {
   color:#000000;
-  font-size: large;
+  font-size: 17px;
   border:1px;
   margin-left: 10px;
 }
@@ -335,8 +354,7 @@ nav a:hover {
 
 .image-container {
   text-align: center;
-  border-radius: 5px;
-  padding: 5px;
+  padding: 5px 5px 15px 5px;
   border-radius: 20px;
   flex:1 1 25%;
   background-color: #ffffff;
@@ -366,7 +384,7 @@ nav a:hover {
 }
 
 .rating {
-  margin-top: 5px;
+  margin-top: 15px;
   display: flex;
   justify-content: left;
   margin-left: 10px;
@@ -375,9 +393,13 @@ nav a:hover {
 .desc-general-pop{
   padding-left: 10px;
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.desc-detail-pop{
+	padding-top: 15px;
 }
 
 .description-pop {
@@ -394,6 +416,7 @@ nav a:hover {
 .rating-pop{
   display: flex;
   justify-content: left;
+	padding-bottom: 5px;
 }
 
 .checked {
@@ -538,9 +561,11 @@ nav a:hover {
 .images-activites {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 15px;
+	padding-left: 17px;
+	padding-right: 17px;
+	margin-bottom: 30px;
 }
 
 .image-activite {
@@ -549,7 +574,6 @@ nav a:hover {
     flex: 1 1 10%;
     background-color: #ffffff;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    margin-right: 50px;
 }
 
 /*
@@ -585,16 +609,15 @@ nav a:hover {
 footer {
   margin-top: 20px;
   background-color: #F2F2F2;
-  color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .footer-column {
+	flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   margin-right: 20px;
@@ -660,6 +683,15 @@ header {
   padding-left: 0;
   padding-right: 0;
   margin: 20px;
+}
+
+.filters_title{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.fa-layers-text{
+	font-size: 16px;
 }
 
 nav li {
@@ -737,7 +769,7 @@ section h2 {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 .same-size span{
     flex:1;
@@ -817,7 +849,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-left: 10px;
 	gap: 0;
 }
 
@@ -879,7 +910,7 @@ nav li {
 }
 
 .search-field-container {
-  margin-top: 0.5rem;
+  height: 44px;
 }
 
 .search-button {
@@ -892,7 +923,7 @@ nav li {
   background-color: #0065FC;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 16px 20px;
   font-size: 16px;
   cursor: pointer;
   border-top-left-radius: 0;
@@ -919,7 +950,7 @@ nav li {
 }
 
 .filters button{
-  margin-right: 0px;
+  margin-right: 20px;
   margin-top: 0px;
   margin-left: 0px;
   padding-left: 0px;
@@ -931,9 +962,6 @@ nav li {
 
 .filtre3, .filtre4{
   flex-basis: 50%;
-}
-
-.arrondis {
 }
 
 .filter-group {
@@ -955,7 +983,6 @@ nav li {
 .popular-results-gap{
   order:1;
   width: 100%;
-  padding-right: 20px;
   border-radius: 0px;
 }
 
@@ -970,6 +997,7 @@ nav li {
   width:100%;
   margin-left: 0px;
   margin-top: 20px;
+	margin-right: 0;
 }
 
 .image-container{
